@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trò chơi Định dạng Văn bản - Tin học 12</title>
+    <link rel="stylesheet" href="./hdkd.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🎮 Trò chơi Định dạng Văn bản</h1>
+        <p>Khám phá sự khác biệt giữa văn bản thô và văn bản đã định dạng</p>
+      </div>
+      <div class="buttons">
+        <button id="resetBtn">🔄 Làm mới</button>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="game-area" id="gameArea">
+        <div class="format-tools">
+          <h3>🛠️ Công cụ Định dạng</h3>
+          <div class="format-item" draggable="true" data-format="bold">
+            📝 In đậm (Bold)
+          </div>
+          <div class="format-item" draggable="true" data-format="italic">
+            📝 In nghiêng (Italic)
+          </div>
+          <div class="format-item" draggable="true" data-format="underline">
+            📝 Gạch chân (Underline)
+          </div>
+          <div class="format-item" draggable="true" data-format="color">
+            🎨 Đổi màu chữ đỏ
+          </div>
+          <div class="format-item" draggable="true" data-format="size">
+            📏 Tăng kích thước chữ
+          </div>
+        </div>
+
+        <div class="text-area">
+          <div class="drop-zone" id="dropZone">
+            <h3>📄 Kéo thả công cụ định dạng vào đây</h3>
+            <div class="text-content" id="textContent">
+              Công nghệ thông tin đã trở thành một phần không thể thiếu trong
+              cuộc sống hiện đại. Từ việc học tập, làm việc đến giải trí, chúng
+              ta đều sử dụng các thiết bị và ứng dụng công nghệ mỗi ngày. Việc
+              hiểu và sử dụng thành thạo công nghệ thông tin sẽ giúp chúng ta
+              thành công hơn trong tương lai.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-area" id="comparisonArea">
+        <div class="text-box original-text">
+          <h4>📄 Văn bản gốc (chưa định dạng)</h4>
+          <div id="originalText">
+            Công nghệ thông tin đã trở thành một phần không thể thiếu trong cuộc
+            sống hiện đại. Từ việc học tập, làm việc đến giải trí, chúng ta đều
+            sử dụng các thiết bị và ứng dụng công nghệ mỗi ngày. Việc hiểu và sử
+            dụng thành thạo công nghệ thông tin sẽ giúp chúng ta thành công hơn
+            trong tương lai.
+          </div>
+        </div>
+        <div class="text-box formatted-text">
+          <h4>✨ Văn bản đã định dạng</h4>
+          <div id="formattedText">
+            Công nghệ thông tin đã trở thành một phần không thể thiếu trong cuộc
+            sống hiện đại. Từ việc học tập, làm việc đến giải trí, chúng ta đều
+            sử dụng các thiết bị và ứng dụng công nghệ mỗi ngày. Việc hiểu và sử
+            dụng thành thạo công nghệ thông tin sẽ giúp chúng ta thành công hơn
+            trong tương lai.
+          </div>
+        </div>
+      </div>
+
+      <div class="success-message" id="successMessage">
+        🎉 Tuyệt vời! Các em vừa thấy sự khác biệt giữa văn bản thô và văn bản
+        đã định dạng. Chúng ta sẽ tìm hiểu chi tiết hơn trong bài học hôm nay!
+        📚
+      </div>
+    </div>
+
+    <script src="./hdkd.js"></script>
+  </body>
+</html>
